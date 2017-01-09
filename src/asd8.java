@@ -2,7 +2,7 @@
  * Created by mariusz on 2017-01-01.
  */
 
-class Chuj {
+class Asd {
     private int prywatny = 10;
     protected int chroniony = 100;
     public int publiczny = 1000;
@@ -23,8 +23,8 @@ public class asd8 {
 
 
     public static void main(String[] args) {
-        Chuj chuj = new Chuj();
-        System.out.println("chroniona = " + chuj.chroniona());
-        System.out.println("chroniony = " + chuj.chroniony);
+        Asd asd = new Asd();
+        System.out.println("chroniona = " + asd.chroniona());
+        System.out.println("chroniony = " + asd.chroniony);
         }
 }

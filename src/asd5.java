@@ -33,7 +33,7 @@ public class asd5 {
 }
 
 
-/* O KURWA !!!
+/* O !!!
 ArrayList insuranceClaims = new ArrayList();
 List insuranceClaims = new ArrayList();
 Collection insuranceClaims = new ArrayList();
