@@ -1,5 +1,7 @@
 package wielomiany;
 
+import sun.plugin.javascript.navig.Array;
+
 /**
  * Created by mariusz on 2017-01-05.
  */
@@ -51,29 +53,28 @@ public class Wielomian {
 
     @Override
     public String toString() {
-        //try { - tutaj tez nie mozna?
-        String s = (tab_wsp[0] < 0) ? "" + tab_wsp[0] : "";
+        String s = "";
         try {
+            s = (tab_wsp[0] < 0) ? "" + "-" : "";
+        //try {
             for (int i = 0; i < tab_wsp.length; i++) {
-
                 if (tab_wsp[i] == 0) {
-                    continue;
+                    continue;               // pomijam iksy z wsp. 0
                 } else if (tab_wsp[i] < 0) {
-                    s = s + tab_wsp[i] + "*x^" + i;
+                    //s = (("".equals(s)) ? "-" : "") + s + tab_wsp[i] + "*x^" + i;        // nie mogę dac "-" prze tab_wsp[i] bo bede mial podwojne minusy
+                    s = s + tab_wsp[i] + "*x^" + i;        // nie mogę dac "-" prze tab_wsp[i] bo bede mial podwojne minusy
                 } else {
                     s = s + "+" + tab_wsp[i] + "*x^" + i;
                 }
             }
-            //System.out.println(s.toCharArray()[0]); // dlaczego wywala błąd? s.toCharArray() nie wywala, nie wywala też jak umiesci sie w forze
-            char[] s1 = s.toCharArray();
+            //System.out.println(s.toCharArray()[0]);
+            //char[] s1 = s.toCharArray();
             return s.substring(1);
 
             //TODO: nie wyswietla ujemnego znaku pierwszego wspolczynnika! (mianu 0)
 
-        } catch (StringIndexOutOfBoundsException e) {
-            return s;
-        } catch (ArrayIndexOutOfBoundsException e) {
-            return s;
+        } catch (StringIndexOutOfBoundsException | ArrayIndexOutOfBoundsException e) {
+            return "0";
         }
         // ---------------------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!------------------------------
         // return s.substring(1); ---------------- nie rozumiem dlaczego nie mogę tutaj dać returna.. ////////

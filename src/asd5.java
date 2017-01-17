@@ -12,6 +12,8 @@ class Cup {
     }
 }
 
+
+
 class Cups {
     static Cup cup1 = new Cup(1);
     static Cup cup2 = new Cup(2);
@@ -24,6 +26,8 @@ class Cups {
     }
 }
 
+
+
 public class asd5 {
     public static void main(String[] args){
         System.out.println("Wewnątrz main()");
@@ -33,8 +37,21 @@ public class asd5 {
 }
 
 
-/* O !!!
+
+/* O !!! referencja innego typu niz deklaracja?
 ArrayList insuranceClaims = new ArrayList();
 List insuranceClaims = new ArrayList();
+
 Collection insuranceClaims = new ArrayList();
 kiedy uzywac typow primitve vs. obiektow? */
+
+// T x = new CosCoDziedziczyPoT();
+
+/*
+Set<Integer> kol = new HashSet<>();
+for (int i = 0; i < 100000; i++) {
+    if (!kol.contains(i % 70000)) {
+        kol.add(i % 70000);
+    }
+}
+*/

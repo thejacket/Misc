@@ -7,20 +7,25 @@ class predkoscDrogaCzas {
     BigDecimal czas;
     BigDecimal predkosc;
 
+
     static BigDecimal obliczPredkosc(BigDecimal dr, BigDecimal cz) {
         return dr.divide(cz);
     }
 
+
     BigDecimal obliczDroge(BigDecimal pr, BigDecimal cz) {
         return pr.multiply(cz);
     }
+
 
     BigDecimal obliczCzas(BigDecimal pr, BigDecimal dr) {
         return dr.divide(pr);
     }
 }
 
+
 public class Main {
+
 
     public static void main(String[] args) {
             predkoscDrogaCzas pr = new predkoscDrogaCzas();

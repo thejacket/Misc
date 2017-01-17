@@ -32,6 +32,7 @@ class Banknot{
     }
         }
 
+
 public class asd7 {
     public static void main(String[] args) {
         System.out.println("Oto wszystkie banknoty:");
