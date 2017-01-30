@@ -71,8 +71,6 @@ public class Wielomian {
             //char[] s1 = s.toCharArray();
             return s.substring(1);
 
-            //TODO: nie wyswietla ujemnego znaku pierwszego wspolczynnika! (mianu 0)
-
         } catch (StringIndexOutOfBoundsException | ArrayIndexOutOfBoundsException e) {
             return "0";
         }

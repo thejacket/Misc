@@ -3,12 +3,12 @@ package filtry;
 /**
  * Created by mariusz on 2017-01-06.
  */
-
-/*public class Test {
+/*
+public class Test {
 
     public void test(int ile, FiltrWart g){
         for(int i=1; i<=ile; i++)
-            g.wstaw();  // Dla generatora wartość argumentu wstaw nie ma znaczenia
+            g.wstaw(0);  // Dla generatora wartość argumentu wstaw nie ma znaczenia
         g.wypisz();
     }
 
